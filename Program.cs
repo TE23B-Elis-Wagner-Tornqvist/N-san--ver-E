@@ -111,42 +111,108 @@
 
 //uppgift 8, sista
 
-int randomNumber = Random.Shared.Next(1, 101);
+// int randomNumber = Random.Shared.Next(1, 101);
 
-while(true)
-{
+// while(true)
+// {
 
-Console.WriteLine("gissa ett tal som är mellan 1 - 100");
+// Console.WriteLine("gissa ett tal som är mellan 1 - 100");
 
-string guess = Console.ReadLine() ?? string.Empty;
-int guessInt = 0;
-bool success = int.TryParse(guess, out guessInt);
+// string guess = Console.ReadLine() ?? string.Empty;
+// int guessInt = 0;
+// bool success = int.TryParse(guess, out guessInt);
 
-if(success == true && guessInt == randomNumber)
-{
-    Console.WriteLine("Helt rätt, snyggt jobbat!");
-    break;
-}
+// if(success == true && guessInt == randomNumber)
+// {
+//     Console.WriteLine("Helt rätt, snyggt jobbat!");
+//     break;
+// }
 
-if(success == true && guessInt < randomNumber)
-{
-    Console.WriteLine("Det där är lite för lågt tyvärr ):");
+// if(success == true && guessInt < randomNumber)
+// {
+//     Console.WriteLine("Det där är lite för lågt tyvärr ):");
     
-}
+// }
 
-if(success == true && guessInt > randomNumber)
-{
-    Console.WriteLine("Det där är lite för högt grabben");
+// if(success == true && guessInt > randomNumber)
+// {
+//     Console.WriteLine("Det där är lite för högt grabben");
     
-}
+// }
 
-if(success == false)
-{
-    Console.WriteLine("Försök igen! Du ska skriva ett nummer kom ihåg!");
-}
+// if(success == false)
+// {
+//     Console.WriteLine("Försök igen! Du ska skriva ett nummer kom ihåg!");
+// }
 
 
 
-}
+// }
 
-Console.ReadLine();
+// Console.ReadLine();
+
+
+
+
+//Näsan över E, 2. Uppgift 1 och uppgift 2
+
+
+//string[] toys = ["rpg", "teddybjörn", "PC", "50kr", "godis"];
+
+// for(int i = 0; i < 5; i++)
+// {
+//     Console.WriteLine(toys[i]);
+    
+// }
+// Console.ReadLine();
+
+
+//2, uppgift 3
+
+
+//string[] names = ["teo", "elis", "oscar", "anton", "thor"];
+
+
+//2, uppgift 4
+
+//string[] numbers = ["3", "8", "5", "9", "10"];
+
+
+//2, uppgift 5
+
+
+
+// for(int i = 0; i < 5; i++)
+// {
+//     Console.WriteLine($"{names[i]} ger {toys[i]} betyget {numbers[i]}");
+// }
+// Console.ReadLine();
+
+
+//2, uppgift 6, 7 och 8
+
+// List<string> cities = new List<string>();
+
+// for(int i = 0; i < 5; i++)
+// {
+//     Console.WriteLine("skriv något");
+//     string answer = Console.ReadLine() ?? string.Empty;
+//     cities.Add($"{answer}");
+
+//     if(answer.ToLower() == "exit")
+//     {
+//         break;
+//     }
+//     Console.WriteLine($" Du la till {cities[i]}");
+    
+// }
+
+// Console.WriteLine("Här är din lista:");
+// for(int s = 0; s < 5; s++)
+// {
+//     Console.WriteLine($"{cities[s]}");
+// }
+// Console.ReadLine();
+
+
+//Näsan över E: 3, uppgift 1
