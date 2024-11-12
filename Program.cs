@@ -111,7 +111,42 @@
 
 //uppgift 8, sista
 
+int randomNumber = Random.Shared.Next(1, 101);
+
+while(true)
+{
+
+Console.WriteLine("gissa ett tal som är mellan 1 - 100");
+
+string guess = Console.ReadLine() ?? string.Empty;
+int guessInt = 0;
+bool success = int.TryParse(guess, out guessInt);
+
+if(success == true && guessInt == randomNumber)
+{
+    Console.WriteLine("Helt rätt, snyggt jobbat!");
+    break;
+}
+
+if(success == true && guessInt < randomNumber)
+{
+    Console.WriteLine("Det där är lite för lågt tyvärr ):");
+    
+}
+
+if(success == true && guessInt > randomNumber)
+{
+    Console.WriteLine("Det där är lite för högt grabben");
+    
+}
+
+if(success == false)
+{
+    Console.WriteLine("Försök igen! Du ska skriva ett nummer kom ihåg!");
+}
 
 
-int randomNumber = Random.Shared.Next(1, 10);
 
+}
+
+Console.ReadLine();
