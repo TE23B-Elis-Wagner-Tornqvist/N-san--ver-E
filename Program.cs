@@ -131,13 +131,13 @@
 // if(success == true && guessInt < randomNumber)
 // {
 //     Console.WriteLine("Det där är lite för lågt tyvärr ):");
-    
+
 // }
 
 // if(success == true && guessInt > randomNumber)
 // {
 //     Console.WriteLine("Det där är lite för högt grabben");
-    
+
 // }
 
 // if(success == false)
@@ -162,7 +162,7 @@
 // for(int i = 0; i < 5; i++)
 // {
 //     Console.WriteLine(toys[i]);
-    
+
 // }
 // Console.ReadLine();
 
@@ -204,7 +204,7 @@
 //         break;
 //     }
 //     Console.WriteLine($" Du la till {cities[i]}");
-    
+
 // }
 
 // Console.WriteLine("Här är din lista:");
@@ -216,3 +216,167 @@
 
 
 //Näsan över E: 3, uppgift 1
+
+
+// void hello32()
+// {
+//     for(int i = 0; i < 32; i++)
+//     {
+//         Console.WriteLine("Hello World!");
+//     }
+// }
+
+
+// hello32();
+
+// Console.ReadLine();
+
+
+//3, uppgift 2
+// int qudrant = 35;
+
+// void Bro (int qudrant)
+// {
+//     Console.WriteLine($"{qudrant * qudrant}");
+// }
+
+// Bro(qudrant);
+
+// Console.ReadLine();
+
+
+
+//3, uppgift 3
+
+
+// float H = 2;
+// float S = 5;
+
+// static void Multi(float H, float S)
+// {
+// Console.WriteLine($"{ H * S}");
+// }
+
+// Multi(H, S);
+
+// Console.ReadLine();
+
+
+
+//3, uppgift 4
+
+// float r = RightTriangleArea(5, 7);
+// float r2 = RightTriangleArea(10, 6);
+
+
+// static float RightTriangleArea(float b, float h)
+// {
+//     return b * h / 2;
+// }
+
+// Console.WriteLine($"{r * r2}");
+
+// Console.ReadLine();
+
+
+//3, uppgift 5
+
+
+
+// static float AreaCircle(float r)
+// {
+//     return r * r * MathF.PI;
+// }
+
+// Console.WriteLine($"{AreaCircle(5)}");
+
+// Console.ReadLine();
+
+
+
+//3, uppgift 6
+
+// void GetNumberInt()
+// {
+
+//     while(true)
+//     {
+
+//     Console.WriteLine("Skirv ett nummer");
+
+//     string answer = Console.ReadLine() ?? string.Empty;
+//     int answerInt = 0;
+//     bool success = int.TryParse(answer, out answerInt);
+
+//     if(success == true)
+//     {
+//         Console.WriteLine($"{answer}");
+//         break;
+//     }
+
+//     }
+    
+
+// }
+
+// GetNumberInt();
+
+// Console.ReadLine();
+
+
+
+//3, uppgift 7
+
+string text = "godis";
+string text2 = "glass";
+string text3 = "chips";
+
+void  GetChoice(string text, string text2, string text3)
+{
+    while(true)
+    {
+
+    
+
+    Console.WriteLine($"Val 1: {text}  val 2: {text2}  val 3 {text3},  skriv vilket nummer du vill ha");
+
+    string answer = Console.ReadLine() ?? string.Empty;
+    int answerInt = 0;
+    bool success = int.TryParse(answer, out answerInt);
+
+  if(success == true)
+  {
+
+     if(answerInt == 1)
+    {
+        Console.WriteLine($" du valde {text}");
+
+    }
+
+    else if(answerInt == 2)
+    {
+        Console.WriteLine($" du valde {text2}");
+    }
+
+    else if(answerInt == 3)
+    {
+        Console.WriteLine($" du valde {text3}");
+    }
+
+    break;
+
+  }
+
+  if(success == false)
+  {
+    Console.WriteLine("SKRIV ETT NUMMER");
+    continue;
+  }
+
+    }
+
+}
+
+
+GetChoice(text, text2, text3);
+Console.ReadLine();
